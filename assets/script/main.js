@@ -1,14 +1,3 @@
-let interaction = document.querySelector("a:nth-of-type(11)");
-
-interaction.addEventListener("click", jumpHandler);
-interaction.addEventListener("animationend", jumpHandler);
-
-function jumpHandler() {
-  interaction.classList.toggle("jump");
-}
-
-//
-
 let frontend = document.querySelector("a:nth-of-type(1)");
 
 frontend.addEventListener("click", spin);
@@ -115,4 +104,15 @@ interface.addEventListener("animationend", vervormder);
 
 function vervormder() {
   interface.classList.toggle("interface");
+}
+
+//
+
+let interaction = document.querySelector("a:nth-of-type(11)");
+
+interaction.addEventListener("click", jumpHandler);
+interaction.addEventListener("animationend", jumpHandler);
+
+function jumpHandler() {
+  interaction.classList.toggle("jump");
 }
